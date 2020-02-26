@@ -29,7 +29,7 @@ public class DBConnect {
             String url;
             url = "jdbc:mysql://localhost:3306/voting";
             info.put("user", "root");
-            info.put("password", "admin");
+            info.put("password", "root");
             conn = DriverManager.getConnection(url, info);
             query(conn, sql);
             return conn;
