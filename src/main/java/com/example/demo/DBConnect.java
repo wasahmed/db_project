@@ -22,7 +22,7 @@ public class DBConnect {
 
     // get connection => return a connection.
     public Connection excuteQuery(String sql){
-
+        System.out.println("HERE");
         try
         {
             Properties info = new Properties();
