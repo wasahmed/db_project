@@ -1,15 +1,13 @@
 package com.example.demo.model;
 
 import com.example.demo.controller.*;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity // This tells Hibernate to make a table out of this class
 public class User {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
+    @ManyToOne("Votes")
     private Integer User_Id;
 
     private String Firstname;
@@ -64,7 +62,6 @@ public class User {
         this.Gender = gender;
     }
 
-
     public String getRace() {
         return Race;
     }
@@ -73,14 +70,12 @@ public class User {
         this.Race = race;
     }
 
+    public String getProvince() {
+        return Province;
+    }
 
-
-    // public String getSurname() {
-    //     return Surname;
-    // }
-
-    // public void setSurname(String name) {
-    //     this.Surname = name;
-    // }
+    public void setProvince(String province) {
+        this.Province = province;
+    }
     
 }
