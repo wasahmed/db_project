@@ -5,6 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import com.example.demo.model.*;
+import com.example.demo.controller.*;
 
 @SpringBootApplication
 public class DemoApplication {
