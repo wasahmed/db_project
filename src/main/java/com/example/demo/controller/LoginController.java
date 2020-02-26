@@ -29,7 +29,7 @@ public class LoginController {
             String url;
             url = "jdbc:mysql://localhost:3306/voting";
             info.put("user", "root");
-            info.put("password", "root");
+            info.put("password", "admin");
             Connection conn = DriverManager.getConnection(url, info);
 
             if (Firstname != null && id != null) {

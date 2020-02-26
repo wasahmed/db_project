@@ -27,12 +27,14 @@ public class RegistrationController {
     // GOD DAMN I WANNA DIE AFTER WRITING THIS :(
     // IM SORRY
     @PostMapping(path="/register") // Map ONLY POST Requests
-    public void addNewUser (@RequestParam("Firstname") String firstname, @RequestParam("Surname") String surname,
+    public ModelAndView addNewUser (@RequestParam("Firstname") String firstname, @RequestParam("Surname") String surname,
                                                   @RequestParam("Id_Number") String idnum, @RequestParam("Race") String race,
                                                   @RequestParam("Gender") String gender,@RequestParam("Province") String province)
     {
         conn.excuteQuery("INSERT INTO User (`Firstname`, `Surname`, `Id_Number`, `Gender`, `Race`, `Province`)" +
                 "VALUES ('" + firstname +"','" + surname+"','" + idnum+"','"+ gender+"','"+ race+"','" +province+"')");
-        return ;
+        ModelAndView mav = new ModelAndView();
+        mav.setViewName("register");
+        return mav;
     }
 }
