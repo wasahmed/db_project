@@ -7,7 +7,6 @@ import javax.persistence.*;
 public class User {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
-    @ManyToOne("Votes")
     private Integer User_Id;
 
     private String Firstname;
@@ -77,5 +76,5 @@ public class User {
     public void setProvince(String province) {
         this.Province = province;
     }
-    
+
 }
