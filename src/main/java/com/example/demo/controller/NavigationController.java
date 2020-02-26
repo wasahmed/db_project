@@ -20,6 +20,7 @@
 // 		mv.setViewName("landing");
 // 		return mv;
 // 	}
+
 // 	@RequestMapping("register")
 // 	public ModelAndView register() {
 // 		ModelAndView mv = new ModelAndView();

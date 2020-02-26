@@ -1,10 +1,7 @@
 package com.example.demo.model;
 
 import com.example.demo.controller.*;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity // This tells Hibernate to make a table out of this class
 public class User {
@@ -64,23 +61,20 @@ public class User {
         this.Gender = gender;
     }
 
+    public String getRace() {
+        return Race;
+    }
 
-    // public String getSurname() {
-    //     return Surname;
-    // }
+    public void setRace(String race) {
+        this.Race = race;
+    }
 
-    // public void setSurname(String name) {
-    //     this.Surname = name;
-    // }
+    public String getProvince() {
+        return Province;
+    }
 
+    public void setProvince(String province) {
+        this.Province = province;
+    }
 
-
-    // public String getSurname() {
-    //     return Surname;
-    // }
-
-    // public void setSurname(String name) {
-    //     this.Surname = name;
-    // }
-    
 }
