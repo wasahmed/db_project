@@ -65,13 +65,13 @@ public class User {
     }
 
 
-    // public String getSurname() {
-    //     return Surname;
-    // }
+    public String getRace() {
+        return Race;
+    }
 
-    // public void setSurname(String name) {
-    //     this.Surname = name;
-    // }
+    public void setRace(String race) {
+        this.Race = race;
+    }
 
 
 
