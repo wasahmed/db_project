@@ -32,20 +32,21 @@
     <div>
         <div id="layout">
             <center>
-                    <FORM ACTION="" METHOD="post">
-                        <INPUT TYPE="radio" NAME="radios" VALUE="radio1" CHECKED>
+                    <FORM ACTION="#" METHOD="post">
+                        <input type="hidden" name="user_id" id="user_id" value="${user}" />
+                        <INPUT TYPE="radio" NAME="party" VALUE="ANC" CHECKED>
                         ANC
                         <BR>
-                        <INPUT TYPE="radio" NAME="radios" VALUE="radio2">
+                        <INPUT TYPE="radio" NAME="party" VALUE="DA">
                         DA
                         <BR>
-                        <INPUT TYPE="radio" NAME="radios" VALUE="radio3">
+                        <INPUT TYPE="radio" NAME="party" VALUE="EFF">
                         EFF
                         <BR>
-                        <INPUT TYPE="radio" NAME="radios" VALUE="radio4">
+                        <INPUT TYPE="radio" NAME="party" VALUE="IFP">
                         IFP
                         <BR>
-                        <INPUT TYPE="radio" NAME="radios" VALUE="radio5">
+                        <INPUT TYPE="radio" NAME="party" VALUE="SACP">
                         SACP
                         <BR>
                         <INPUT TYPE="submit" VALUE="Submit Vote">

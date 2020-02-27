@@ -8,8 +8,6 @@ import java.util.Properties;
 public class DBConnect {
 
     Connection conn = null;
-
-    //prepared statement (query) function here
     private void query(Connection connection, String query){
 
         try {
@@ -20,7 +18,6 @@ public class DBConnect {
         }
     }
 
-    // get connection => return a connection.
     public Connection excuteQuery(String sql){
         System.out.println("HERE");
         try
